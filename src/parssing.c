@@ -1,39 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   parssing.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/02 03:34:51 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/02 04:50:09 by mbazirea         ###   ########.fr       */
+/*   Created: 2023/06/02 03:46:20 by mbazirea          #+#    #+#             */
+/*   Updated: 2023/06/02 04:46:22 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
+#include "../includes/push_swap.h"
 
-# define PUSH_SWAP_H
-
-# include <stdio.h>
-# include <stdlib.h>
-# include "../libft/libft.h"
-
-typedef struct s_stack
+void	parssing(int argc, char *argv[])
 {
-	int	*a;
-	int	*b;
-	int	lena;
-	int	lenb;
-	int	len;
-}	t_stack;
+	char *big_str;
+/*
+	if (argc < 2)
+		return (NULL);
+*/
+	big_str = big_strjoin(argc, argv);
 
-//	parssing.c
-
-void	parssing(int argc, char *argv[]);
-
-//	parssing_utils.c
-
-int		test_input_valid(char *str);
-char	*big_strjoin(int argc, char *argv[]);
-
-#endif
+	printf("%s\n", big_str);
+	free(big_str);
+}

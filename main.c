@@ -6,15 +6,14 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 03:31:56 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/02 03:40:30 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/02 04:50:04 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/push_swap.h"
 
-int main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
+	parssing(argc, argv);
 	return (0);
-	argc ++;
-	argv[0] = "adsf";
 }
