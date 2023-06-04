@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 03:46:20 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/03 03:47:27 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/04 02:08:50 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,26 +15,27 @@
 t_stack	*parssing(int argc, char *argv[])
 {
 	char			*big_str;
-	unsigned int	i;
 	t_stack			*stack;
 
-	i = 0;
 	if (argc < 2)
 		return (NULL);
 	big_str = big_strjoin(argc, argv);
 	if (big_str == NULL)
-		write(1, "error\n", 6);
+	{
+		write(1, "Error\n", 6);
+		return (NULL);
+	}
 	if (test_input_valid(big_str) == 1)
 	{
-		write(1, "error\n", 6);
+		write(1, "Error\n", 6);
 		free(big_str);
+		return (NULL);
 	}
-	printf("big_str : %s\n", big_str);
 	stack = init_stack(big_str);
-	while (i < stack->lena)
+	if (stack == NULL)
 	{
-		printf("%d\n", stack->a[i]);
-		i++;
+		write(1, "Error\n", 6);
+		return (NULL);
 	}
 	return (stack);
 }

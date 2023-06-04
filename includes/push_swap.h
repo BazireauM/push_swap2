@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 03:34:51 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/03 03:47:56 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/04 02:08:54 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ t_stack			*parssing(int argc, char *argv[]);
 int				test_input_valid(char *str);
 char			*big_strjoin(int argc, char *argv[]);
 char			*big_strjoin2(char *big_str, int i, char *argv[]);
-t_stack			*init_stack(char *big_str);
+unsigned int	rank(int *a, int i, int len);
 int				test_int(char **big_str_split);
 
 //	utils.c (full)
@@ -47,8 +47,11 @@ long long		ft_atoi_long_long(const char *s);
 int				is_int(char *nb);
 int				test_duplicate(int *a, int len);
 
-//	utils_2.c
+//	inti_stack.c
 
-unsigned int	rank(int *a, int i, int len);
+t_stack			*init_stack(char *big_str);
+t_stack			*init_stack2(char **big_str_split, int len);
+t_stack			*init_stack3(int *a, int len);
+t_stack			*init_stack4(t_stack *stack, int *a, int len);
 
 #endif

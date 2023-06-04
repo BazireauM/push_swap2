@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 03:48:56 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/03 03:47:53 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/04 02:03:33 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,51 +94,18 @@ int	test_int(char **big_str_split)
 	return (0);
 }
 
-t_stack	*init_stack(char *big_str)
+unsigned int	rank(int *a, int i, int len)
 {
-	t_stack	*stack;
-	int		*a;
-	int		len;
-	char	**big_str_split;
-	int		i;
+	int	count;
+	int	b;
 
-	i = 0;
-	big_str_split = ft_split(big_str, ' ');
-	free(big_str);
-	while (big_str_split[i])
-		i++;
-	len = i;
-	a = malloc(sizeof(int) * len);
-	i = 0;
-	if (test_int(big_str_split) == 1)
+	count = len - 1;
+	b = 0;
+	while (b < len)
 	{
-		write(1, "error\n", 6);
-		return (NULL);
+		if (a[i] < a[b])
+			count--;
+		b++;
 	}
-	while (big_str_split[i])
-	{
-		a[i] = ft_atoi(big_str_split[i]);
-		i++;
-	}
-	if (test_duplicate(a, len) == 1)
-	{
-		write(1, "Error\n", 6);
-		return (NULL);
-	}
-	stack = malloc(sizeof(t_stack) * 1);
-	stack->a = malloc(sizeof(unsigned int) * len);
-	stack->b = malloc(sizeof(unsigned int) * len);
-	stack->len = len;
-	stack->lena = len;
-	stack->lenb = 0;
-	i = 0;
-	while ((unsigned int)i < stack->lena)
-	{
-		stack->a[i] = rank(a, i, len);
-		i++;
-	}
-//	free_ft_split(big_str_split);
-//	free(a);
-//	free(big_str);
-	return (stack);
+	return (count);
 }
