@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 03:34:51 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/04 02:25:30 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/04 03:04:59 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,9 @@ t_stack			*init_stack4(t_stack *stack, int *a, int len);
 //	action.c
 
 void			sa(t_stack *stack);
+void			sb(t_stack *stack);
+void			ss(t_stack *stack);
+void			pa(t_stack *stack);
+void			pb(t_stack *stack);
 
 #endif
