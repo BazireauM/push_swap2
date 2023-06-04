@@ -1,38 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   action.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/02 03:31:56 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/04 02:25:26 by mbazirea         ###   ########.fr       */
+/*   Created: 2023/06/04 02:18:05 by mbazirea          #+#    #+#             */
+/*   Updated: 2023/06/04 02:25:28 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/push_swap.h"
+#include "../includes/push_swap.h"
 
-int	main(int argc, char *argv[])
+void	sa(t_stack	*stack)
 {
-	t_stack	*stack;
+	unsigned int	tmp;
 
-	stack = parssing(argc, argv);
-	if (stack == NULL)
-		return (1);
-	int i = 0;
-	printf("stack A:\n");
-	while (i < stack->lena)
+	if (stack->lena >= 2)
 	{
-		printf("%d\n", stack->a[i]);
-		i++;
+		tmp = stack->a[0];
+		stack->a[0] = stack->a[1];
+		stack->a[1] = tmp;
 	}
-	i = 0;
-	printf("stack B:\n");
-	while (i < stack->lenb)
-	{
-		printf("%d\n", stack->b[i]);
-		i++;
-	}
-	free_stack(stack);
-	return (0);
+	write(1, "sa\n", 3);
 }

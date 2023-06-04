@@ -4,7 +4,8 @@ SRCS	=	main.c\
 			src/parssing_utils.c\
 			src/parssing.c\
 			src/utils.c\
-			src/init_stack.c
+			src/init_stack.c\
+			src/action.c
 
 LIBFTDIR	=	libft/
 
