@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 03:34:51 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/04 03:04:59 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/04 04:13:34 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ t_stack			*init_stack2(char **big_str_split, int len);
 t_stack			*init_stack3(int *a, int len);
 t_stack			*init_stack4(t_stack *stack, int *a, int len);
 
-//	action.c
+//	action.c (full)
 
 void			sa(t_stack *stack);
 void			sb(t_stack *stack);
@@ -62,4 +62,15 @@ void			ss(t_stack *stack);
 void			pa(t_stack *stack);
 void			pb(t_stack *stack);
 
+//	action2.c (full)
+
+void			ra(t_stack *stack);
+void			rb(t_stack *stack);
+void			rr(t_stack *stack);
+
+//action3.c
+
+void			rra(t_stack *stack);
+void			rrb(t_stack *stack);
+void			rrr(t_stack *stack);
 #endif

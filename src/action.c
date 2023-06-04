@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/04 02:18:05 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/04 03:04:55 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/04 04:13:32 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	ss(t_stack	*stack)
 
 void	pb(t_stack	*stack)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	if (stack->lena >= 1)
 	{
@@ -79,11 +79,12 @@ void	pb(t_stack	*stack)
 		stack->lena--;
 		stack->lenb++;
 	}
+	write(1, "pb\n", 3);
 }
 
 void	pa(t_stack	*stack)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	if (stack->lenb >= 1)
 	{
@@ -103,4 +104,5 @@ void	pa(t_stack	*stack)
 		stack->lenb--;
 		stack->lena++;
 	}
+	write(1, "pa\n", 3);
 }
