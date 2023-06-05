@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 12:05:48 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/05 12:34:17 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/05 12:59:26 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,9 @@ void	put_in_b(t_stack *stack, unsigned int i)
 	unsigned int	b;
 
 	b = 0;
-
 	while (b < stack->len)
 	{
-		if((stack->a[0] & 1 << i) == 0)
+		if ((stack->a[0] & 1 << i) == 0)
 			pb(stack);
 		else
 			ra(stack);

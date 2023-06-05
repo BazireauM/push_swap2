@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 12:04:56 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/05 12:34:19 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/05 12:59:24 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	algo(t_stack *stack)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	i = 0;
 	while (!test_sort(stack))
