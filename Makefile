@@ -7,7 +7,9 @@ SRCS	=	main.c\
 			src/init_stack.c\
 			src/action.c\
 			src/action2.c\
-			src/action3.c
+			src/action3.c\
+			src/algo.c\
+			src/algo_utils.c
 
 LIBFTDIR	=	libft/
 

@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/03 02:19:29 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/04 01:21:59 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/05 12:15:43 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ int	test_duplicate(int *a, int len)
 	int	b;
 	int	count;
 
-	i = 1;
+	i = 0;
 	while (i < len)
 	{
 		b = i;

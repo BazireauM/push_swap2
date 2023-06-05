@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 03:31:56 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/04 04:13:24 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/05 12:33:41 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	main(int argc, char *argv[])
 	stack = parssing(argc, argv);
 	if (stack == NULL)
 		return (1);
+	printf("%d\n", algo(stack));
+	display_stack(stack);
 	free_stack(stack);
 	return (0);
 }

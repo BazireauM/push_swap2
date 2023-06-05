@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 03:34:51 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/04 04:13:34 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/05 12:34:21 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,9 +68,19 @@ void			ra(t_stack *stack);
 void			rb(t_stack *stack);
 void			rr(t_stack *stack);
 
-//action3.c
+//	action3.c (fuLL)
 
 void			rra(t_stack *stack);
 void			rrb(t_stack *stack);
 void			rrr(t_stack *stack);
+
+//	algo.c
+
+int				algo(t_stack *stack);
+
+//	algo_utils.c
+
+int				test_sort(t_stack *stack);
+void			put_in_b(t_stack *stack, unsigned int i);
+void			put_in_a(t_stack *stack);
 #endif
