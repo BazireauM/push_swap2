@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 03:34:51 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/05 12:59:19 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/07 10:27:35 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,10 +77,15 @@ void			rrr(t_stack *stack);
 //	algo.c
 
 int				algo(t_stack *stack);
+int				sort_small(t_stack *stack);
+void			sort_3(t_stack *stack);
+void			sort_4(t_stack *stack);
+unsigned int	rank_simple(t_stack *stack);
 
 //	algo_utils.c
 
 int				test_sort(t_stack *stack);
 void			put_in_b(t_stack *stack, unsigned int i);
 void			put_in_a(t_stack *stack);
+void			sort_5(t_stack *stack);
 #endif

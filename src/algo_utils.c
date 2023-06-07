@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 12:05:48 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/05 12:59:26 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/07 10:30:59 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,41 @@ void	put_in_a(t_stack *stack)
 	while (stack->lenb > 0)
 	{
 		pa(stack);
+	}
+}
+
+void	norm(t_stack *stack)
+{
+	ra(stack);
+	pa(stack);
+	sa(stack);
+	rra(stack);
+}
+
+void	sort_5(t_stack *stack)
+{
+	int	a;
+
+	a = rank_simple(stack);
+	if (a == 0)
+		pa(stack);
+	else if (a == 1)
+	{
+		pa(stack);
+		sa(stack);
+	}
+	else if (a == 2)
+		norm(stack);
+	else if (a == 3)
+	{
+		rra(stack);
+		pa(stack);
+		ra(stack);
+		ra(stack);
+	}
+	else if (a == 4)
+	{
+		pa(stack);
+		ra(stack);
 	}
 }
