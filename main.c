@@ -6,13 +6,11 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 03:31:56 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/07 10:24:50 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:33:49 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/push_swap.h"
-
-void	display_stack(t_stack *stack);
 
 int	main(int argc, char *argv[])
 {

@@ -6,7 +6,7 @@
 /*   By: mbazirea <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 12:04:56 by mbazirea          #+#    #+#             */
-/*   Updated: 2023/06/07 10:28:33 by mbazirea         ###   ########.fr       */
+/*   Updated: 2023/06/09 11:33:51 by mbazirea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	algo(t_stack *stack)
 	unsigned int	i;
 
 	i = 0;
+	if (test_sort(stack) == 1)
+		return (1);
 	if (stack->len <= 5)
 		return (sort_small(stack));
 	while (!test_sort(stack))
